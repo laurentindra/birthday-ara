@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Ke-18 Ara Sayang! 💖</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600;800&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Kursor Kustom Berbentuk Hati Berkilau -->
+    <div id="custom-cursor"></div>
+
+    <!-- Pemutar Musik Latar Belakang -->
+    <audio id="bgm-player" src="assets/Chibi Maruko Chan First song.mp3" loop></audio>
+
+    <!-- 1. SCREEN COUNTDOWN (Hitung Mundur ke 23 Mei 2026 00:00 WIB) -->
+    <div id="countdown-screen" class="screen active">
+        <div class="countdown-decorations">
+            <div class="cloud cloud-1">☁️</div>
+            <div class="cloud cloud-2">☁️</div>
+            <div class="star star-1">✨</div>
+            <div class="star star-2">⭐</div>
+            <div class="star star-3">✨</div>
+        </div>
+
+        <!-- GIF Maruko di samping Countdown -->
+        <div class="countdown-maruko maruko-top-left">
+            <img src="https://media1.tenor.com/m/WcP9OmWOOysAAAAC/%E5%B0%8F%E4%B8%B8%E5%AD%90-cheerers.gif"
+                alt="Maruko Cheering">
+        </div>
+        <div class="countdown-maruko maruko-bottom-left">
+            <img src="https://media1.tenor.com/m/eNnF6HvDyVcAAAAC/chibi-maruko-chan-maruko.gif" alt="Maruko Shout">
+        </div>
+        <div class="countdown-maruko maruko-top-right">
+            <img src="https://media1.tenor.com/m/hciw3e246wsAAAAC/cheer-up-excited.gif" alt="Maruko Excited">
+        </div>
+        <div class="countdown-maruko maruko-bottom-right">
+            <img src="https://media1.tenor.com/m/rYRJdAncXUcAAAAC/%E5%B0%8F%E4%B8%B8%E5%AD%90-chibimaru.gif"
+                alt="Maruko Happy">
+        </div>
+
+        <div class="countdown-card">
+            <div class="heart-pulse">💖</div>
+            <h2>Kita tunggu sayanggg ultah yaaaa, xixixxixi dewasa kiw kiw</h2>
+            <p class="subtext">Detik-detik menuju Dara Azzahra berumur 18 tahun! </p>
+
+            <div class="timer">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <label>Hari</label>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <label>Jam</label>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <label>Menit</label>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <label>Detik</label>
+                </div>
+            </div>
+
+            <p class="footer-note">Dibuat penuh cinta sama sayangkuu 💕</p>
+        </div>
+    </div>
+
+    <!-- 2. SCREEN ENVELOPE GATE (Gerbang Amplop Kejutan) -->
+    <div id="envelope-screen" class="screen">
+        <div class="envelope-container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-paper">
+                        <div class="letter-content">
+                            <h3>Buat Ara sayangku, 💖</h3>
+                            <p>Aku punya surprise kecil nih buat kamu... 🥺👉👈</p>
+                            <p class="click-hint">Klik segel love di luar buat buka ya! ✨</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart-seal">❤️</div>
+            </div>
+            <h1 class="envelope-title">Sayang, Ada Surat Cinta Untukmu! 💌</h1>
+            <p class="envelope-subtitle">Klik segel hati di atas untuk membukanya</p>
+        </div>
+    </div>
+
+    <!-- 3. MAIN SURPRISE CONTENT (Konten Utama Website) -->
+    <div id="main-content">
+        <!-- Floating Music Controller Widget -->
+        <div class="music-widget" id="music-widget">
+            <div class="cassette-disc">
+                <i class="fa-solid fa-compact-disc fa-spin"></i>
+            </div>
+            <span class="music-title">Chibi Maruko Chan BGM 🎶</span>
+            <button id="toggle-music" class="music-btn"><i class="fa-solid fa-pause"></i></button>
+        </div>
+
+        <!-- HERO SECTION -->
+        <header class="hero-section">
+            <div class="floating-hearts-bg" id="floating-hearts-bg"></div>
+            <div class="hero-container">
+                <div class="hero-image-wrapper">
+                    <img src="assets/ara_hero.jpg" alt="Dara Azzahra" class="hero-image">
+                    <div class="sparkles-decor">
+                        <span style="--i:1">✨</span>
+                        <span style="--i:2">💖</span>
+                        <span style="--i:3">⭐</span>
+                        <span style="--i:4">✨</span>
+                    </div>
+                </div>
+                <div class="hero-text-card">
+                    <span class="age-badge">18th Sweetest Birthday 🎉</span>
+                    <h1 class="romantic-title">Happy Birthday, <br><span class="name-highlight">Dara Azzahra</span>! 💖
+                    </h1>
+                    <p class="typewriter-text" id="hero-typewriter"></p>
+                    <div class="scroll-down-indicator">
+                        <p>Scrolll laaa kebawahhh, hehehee ada supraiss sedikitt, maaf yaa cuman inii! 👇</p>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECTION PHOTO WALL MARQUEE (Dinding Foto Berjalan Bolak-Balik) -->
+        <section class="photo-wall-section">
+            <div class="section-header">
+                <h2>Galeri Memori Indah Ara</h2>
+                <p>Kumpulan senyum manis Ara yang bikin hari-hariku jadi lebih berwarna! 💕</p>
+            </div>
+
+            <div class="marquee-container">
+                <!-- Baris 1: Kiri ke Kanan -->
+                <div class="marquee-row l-to-r">
+                    <div class="marquee-track">
+                        <!-- Foto 1-6 original -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto1.jpg" onerror="this.src='https://picsum.photos/300/300?random=1'"
+                                alt="Ara Cantik 1">
+                            <p>Senyum termanis Ara 🥰</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto2.jpg" onerror="this.src='https://picsum.photos/300/300?random=2'"
+                                alt="Ara Cantik 2">
+                            <p>Cantik luar biasa ✨</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto3.jpg" onerror="this.src='https://picsum.photos/300/300?random=3'"
+                                alt="Ara Cantik 3">
+                            <p>Gemas banget! 🥺</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto4.jpg" onerror="this.src='https://picsum.photos/300/300?random=4'"
+                                alt="Ara Cantik 4">
+                            <p>Pelindung hatiku ❤️</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto5.jpg" onerror="this.src='https://picsum.photos/300/300?random=5'"
+                                alt="Ara Cantik 5">
+                            <p>Foto terfavorit! 😍</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto6.jpg" onerror="this.src='https://picsum.photos/300/300?random=6'"
+                                alt="Ara Cantik 6">
+                            <p>Always happy, Ara! 🌟</p>
+                        </div>
+                        <!-- Duplikasi untuk infinite scrolling -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto1.jpg" onerror="this.src='https://picsum.photos/300/300?random=1'"
+                                alt="Ara Cantik 1">
+                            <p>Senyum termanis Ara 🥰</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto2.jpg" onerror="this.src='https://picsum.photos/300/300?random=2'"
+                                alt="Ara Cantik 2">
+                            <p>Cantik luar biasa ✨</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto3.jpg" onerror="this.src='https://picsum.photos/300/300?random=3'"
+                                alt="Ara Cantik 3">
+                            <p>Gemas banget! 🥺</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto4.jpg" onerror="this.src='https://picsum.photos/300/300?random=4'"
+                                alt="Ara Cantik 4">
+                            <p>Pelindung hatiku ❤️</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto5.jpg" onerror="this.src='https://picsum.photos/300/300?random=5'"
+                                alt="Ara Cantik 5">
+                            <p>Foto terfavorit! 😍</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto6.jpg" onerror="this.src='https://picsum.photos/300/300?random=6'"
+                                alt="Ara Cantik 6">
+                            <p>Always happy, Ara! 🌟</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baris 2: Kanan ke Kiri -->
+                <div class="marquee-row r-to-l">
+                    <div class="marquee-track">
+                        <!-- Foto 7-12 original -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto7.jpg" onerror="this.src='https://picsum.photos/300/300?random=7'"
+                                alt="Ara Cantik 7">
+                            <p>Kecantikan hakiki 🌸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto8.jpg" onerror="this.src='https://picsum.photos/300/300?random=8'"
+                                alt="Ara Cantik 8">
+                            <p>Lagi ngambek tetep gemas 😠💖</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto9.jpg" onerror="this.src='https://picsum.photos/300/300?random=9'"
+                                alt="Ara Cantik 9">
+                            <p>Anggun sekali 👑</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto10.jpg" onerror="this.src='https://picsum.photos/300/300?random=10'"
+                                alt="Ara Cantik 10">
+                            <p>Tatapannya bikin salting 😳</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto11.jpg" onerror="this.src='https://picsum.photos/300/300?random=11'"
+                                alt="Ara Cantik 11">
+                            <p>Tuan putri tercinta 👸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto12.jpg" onerror="this.src='https://picsum.photos/300/300?random=12'"
+                                alt="Ara Cantik 12">
+                            <p>Sayangku selamanya 💞</p>
+                        </div>
+                        <!-- Duplikasi untuk infinite scrolling -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto7.jpg" onerror="this.src='https://picsum.photos/300/300?random=7'"
+                                alt="Ara Cantik 7">
+                            <p>Kecantikan hakiki 🌸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto8.jpg" onerror="this.src='https://picsum.photos/300/300?random=8'"
+                                alt="Ara Cantik 8">
+                            <p>Lagi ngambek tetep gemas 😠💖</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto9.jpg" onerror="this.src='https://picsum.photos/300/300?random=9'"
+                                alt="Ara Cantik 9">
+                            <p>Anggun sekali 👑</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto10.jpg" onerror="this.src='https://picsum.photos/300/300?random=10'"
+                                alt="Ara Cantik 10">
+                            <p>Tatapannya bikin salting 😳</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto11.jpg" onerror="this.src='https://picsum.photos/300/300?random=11'"
+                                alt="Ara Cantik 11">
+                            <p>Tuan putri tercinta 👸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto12.jpg" onerror="this.src='https://picsum.photos/300/300?random=12'"
+                                alt="Ara Cantik 12">
+                            <p>Sayangku selamanya 💞</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baris 3: Kiri ke Kanan -->
+                <div class="marquee-row l-to-r">
+                    <div class="marquee-track">
+                        <!-- Foto 13-18 original -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto13.jpg" onerror="this.src='https://picsum.photos/300/300?random=13'"
+                                alt="Ara Cantik 13">
+                            <p>Ratu di hatiku 💖</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto14.jpg" onerror="this.src='https://picsum.photos/300/300?random=14'"
+                                alt="Ara Cantik 14">
+                            <p>Lucu kuadrat 😆💕</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto15.jpg" onerror="this.src='https://picsum.photos/300/300?random=15'"
+                                alt="Ara Cantik 15">
+                            <p>Cantiknya natural 🌿</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto16.jpg" onerror="this.src='https://picsum.photos/300/300?random=16'"
+                                alt="Ara Cantik 16">
+                            <p>My sunshine ☀️💛</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto17.jpg" onerror="this.src='https://picsum.photos/300/300?random=17'"
+                                alt="Ara Cantik 17">
+                            <p>Gemoy parah! 🧸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto18.jpg" onerror="this.src='https://picsum.photos/300/300?random=18'"
+                                alt="Ara Cantik 18">
+                            <p>Love you to the moon 🌙</p>
+                        </div>
+                        <!-- Duplikasi untuk infinite scrolling -->
+                        <div class="polaroid-card">
+                            <img src="assets/foto13.jpg" onerror="this.src='https://picsum.photos/300/300?random=13'"
+                                alt="Ara Cantik 13">
+                            <p>Ratu di hatiku 💖</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto14.jpg" onerror="this.src='https://picsum.photos/300/300?random=14'"
+                                alt="Ara Cantik 14">
+                            <p>Lucu kuadrat 😆💕</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto15.jpg" onerror="this.src='https://picsum.photos/300/300?random=15'"
+                                alt="Ara Cantik 15">
+                            <p>Cantiknya natural 🌿</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto16.jpg" onerror="this.src='https://picsum.photos/300/300?random=16'"
+                                alt="Ara Cantik 16">
+                            <p>My sunshine ☀️💛</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto17.jpg" onerror="this.src='https://picsum.photos/300/300?random=17'"
+                                alt="Ara Cantik 17">
+                            <p>Gemoy parah! 🧸</p>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="assets/foto18.jpg" onerror="this.src='https://picsum.photos/300/300?random=18'"
+                                alt="Ara Cantik 18">
+                            <p>Love you to the moon 🌙</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION INTERACTIVE CAKE (Tiup Lilin) -->
+        <section class="cake-section" id="cake-area">
+            <div class="section-header">
+                <h2> Tiup Lilin Ulang Tahun sayaaanggggggggg!</h2>
+                <p>Buat permohonan di dalam hatimu, lalu tiup lilin di bawah ini dengan dipencett yaaa! </p>
+            </div>
+
+            <div class="cake-container">
+                <!-- GIF Maruko Joget Kiri -->
+                <div class="maruko-dance left">
+                    <img src="https://media1.tenor.com/m/oEBcPTDLsLoAAAAC/chibi-maruko-chan-boingboingboingboing.gif"
+                        alt="Maruko Joget Kiri">
+                </div>
+
+                <div class="cake-wrapper">
+                    <!-- Lilin-lilin -->
+                    <div class="candles-container">
+                        <div class="candle active" data-id="1">
+                            <div class="flame"></div>
+                            <div class="wax"></div>
+                        </div>
+                        <div class="candle active" data-id="2">
+                            <div class="flame"></div>
+                            <div class="wax"></div>
+                        </div>
+                        <div class="candle active" data-id="3">
+                            <div class="flame"></div>
+                            <div class="wax"></div>
+                        </div>
+                    </div>
+                    <!-- Badan Kue -->
+                    <div class="cake-body">
+                        <div class="cake-top"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-bottom"></div>
+                        <div class="cream-drips"></div>
+                    </div>
+                    <div class="cake-plate"></div>
+                </div>
+
+                <!-- GIF Maruko Joget Kanan -->
+                <div class="maruko-dance right">
+                    <img src="https://media1.tenor.com/m/77pa6n25_g0AAAAC/thats-great-celebration.gif"
+                        alt="Maruko Joget Kanan">
+                </div>
+
+                <button id="blow-btn" class="cute-btn"><i class="fa-solid fa-wind"></i> Tiup Semua Lilin! ✨</button>
+            </div>
+
+            <!-- Pesan Rahasia yang Muncul setelah Lilin Padam -->
+            <div class="hidden-wishes-box" id="wishes-box">
+                <div class="wishes-content animate-pop">
+                    <span class="wishes-badge">Make A Wish Granted 🌟</span>
+                    <h3>Happy 18th Birthday, Dara Azzahra! 🎉🎂</h3>
+                    <p class="romantic-wish">
+                        "Happy 18th birthday buat sayangku tercinta, Ara! 🎂✨ Di umur yang baru ini, aku harap kamu
+                        selalu happy, sehat terus, dan jangan sampai senyum manis kamu pudar yaa. Makasih banyak ya udah
+                        jadi orang yang paling berharga dan selalu ada buat aku. Semoga semua wish dan mimpi kamu di
+                        hari spesial ini dikabulin sama Tuhan. Aku bakal selalu ada di sini buat support, sayangin, dan
+                        nemenin kamu terus di hari-hari seru ke depan. Aku sayang banget banget sama Ara! ❤️"
+                    </p>
+                    <div class="wishes-footer">
+                        <span>With endless love, Sayangkuu 💕</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION BALLOON POPPER (Pecahkan Balon) -->
+        <section class="balloon-section" id="balloon-area">
+            <div class="section-header">
+                <h2>🎈 Pecahkan Balon Cinta!</h2>
+                <p>Klik/sentuh balon-balon yang melayang untuk menemukan alasan mengapa aku sayang Ara! 🥰</p>
+            </div>
+
+            <div class="balloon-canvas" id="balloon-canvas">
+                <!-- Balon melayang akan secara dinamis ditambahkan lewat JS -->
+                <div class="canvas-hint">Ketuk balon yang lewat di layar! 👇</div>
+            </div>
+        </section>
+
+        <!-- SECTION VENDING MACHINE (Mesin Kupon Manja) -->
+        <section class="vending-section">
+            <div class="section-header">
+                <h2>🎰 Mesin Kupon Manja Ara!</h2>
+                <p>Masukin koin cinta, putar tuasnya, dan dapetin kupon manja yang bisa kamu tuker ke aku kapan aja!
+                    🥰🎫</p>
+            </div>
+
+            <div class="vending-container">
+                <div class="vending-machine" id="vending-machine">
+                    <!-- Glass Display -->
+                    <div class="machine-glass">
+                        <div class="capsules-pile">
+                            <div class="capsule cap-1">🎀</div>
+                            <div class="capsule cap-2">💝</div>
+                            <div class="capsule cap-3">🧸</div>
+                            <div class="capsule cap-4">🍦</div>
+                            <div class="capsule cap-5">💌</div>
+                        </div>
+                    </div>
+
+                    <!-- Control Panel -->
+                    <div class="machine-control">
+                        <div class="coin-slot-wrapper">
+                            <div class="coin" id="love-coin">🪙</div>
+                            <div class="coin-slot">
+                                <div class="slot-line"></div>
+                            </div>
+                            <span class="coin-hint">Klik koin!</span>
+                        </div>
+                        <div class="crank-wrapper">
+                            <div class="crank disabled" id="crank-handle">
+                                <div class="crank-handle"></div>
+                            </div>
+                            <span class="crank-hint">Putar tuas!</span>
+                        </div>
+                    </div>
+
+                    <!-- Dispenser -->
+                    <div class="dispenser-area" id="dispenser-area">
+                        <div class="dispenser-door" id="dispenser-door"></div>
+                        <!-- Capsule akan muncul di sini via JS -->
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px; font-size: 13px; color: #999; text-align: center;">Sisa kupon: <strong
+                        id="coupon-counter">7</strong>/7 🎫</p>
+            </div>
+        </section>
+
+        <!-- SECTION SACRED SCROLL (Surat Cinta Gulungan) -->
+        <section class="scroll-section">
+            <div class="section-header">
+                <h2>📜 Surat Cinta kiww kiwwwwwwwwwww</h2>
+                <p>Sebuah surat dari lubuk hati aku yang paling dalam buat Ara sayangku. ❤️</p>
+            </div>
+
+            <div class="scroll-wrapper">
+                <div class="scroll-handle left"></div>
+                <div class="scroll-paper">
+                    <div class="scroll-letter">
+                        <p class="scroll-greeting">Halo Dara Azzahra Sayangku, ✨</p>
+
+                        <p>Hari ini bener-bener hari yang spesial banget. Hari di mana 18 tahun yang lalu, dunia
+                            kedatangan seorang bayi perempuan lucu yang sekarang tumbuh jadi cewek tercantik, tergemes,
+                            dan paling luar biasa buat aku. Yup, itu kamu, Ara sayangku! 🥰</p>
+
+                        <p>Happy sweet seventeen plus one! Hahaha selamat ulang tahun yang ke-18 yaa sayang. Angka 18
+                            ini tandanya kamu udah resmi dewasa nih. Aku seneng banget dan bersyukur bisa ada di samping
+                            kamu buat ngerayain momen se-spesial ini bareng-bareng.</p>
+
+                        <p>Lewat website sederhana yang aku bikin khusus buat kamu ini, aku pengen kamu tau kalau tiap
+                            detik yang aku lewatin bareng kamu itu berharga banget. Aku suka semua hal tentang kamu:
+                            ketawa kamu yang nular, cemberutnya kamu pas lagi ngambek manja, mata kamu yang bikin adem,
+                            dan cara kamu yang manis banget pas lagi sayang sama aku.</p>
+
+                        <p>Maaf ya kalau kadang aku masih suka bikin kesel, kekanak-kanakan, atau kurang romantis secara
+                            langsung. Tapi percayalah, sayangnya aku ke kamu itu beneran tulus dan gak bakal pernah
+                            berkurang. Semoga di umur yang ke-18 ini kamu makin happy terus, urusan sekolah dan
+                            cita-citamu dimudahkan, dan selalu jadi Ara yang ceria yaa. Kita berjuang semua nya sama
+                            sama ya sayanggg</p>
+                        <p>Aku disini berjuang terus sayang, maafkan aku kalo aku kadang diam, itu aku lagi stress kali
+                            sayang hehehe
+
+                        </p>
+                        <p>Sebenernya aku masih banyak mau di omongin tapi aku
+                            gabisa ngomong panjang panjang kayanya, intinya itu sihhh
+                            aku
+                            bakal selalu ada buat kamu, dan aku sayang banget sama
+                            kamu
+                            xixixixiix
+                        </p>
+                        <p>Yuk, kita bikin lebih banyak kenangan seru dan lucu bareng-bareng ke depannya. Aku bakal
+                            selalu siap sedia di samping kamu buat dukung kamu dan ngerayain semua pencapaian hebatmu.
+                        </p>
+
+                        <p class="scroll-sign">Yang sayang banget sama kamu selamanya,</p>
+                        <p class="scroll-signature">💖 Laurent Indra Febrian 💖</p>
+                    </div>
+                </div>
+                <div class="scroll-handle right"></div>
+            </div>
+        </section>
+
+        <!-- CUTE FOOTER -->
+        <footer class="cute-footer">
+            <div class="footer-hearts">💖 ✨ ❤️ ✨ 💖</div>
+            <p>Made with love for <strong>Dara Azzahra (Ara)</strong> on her 18th Birthday</p>
+            <p class="copyright">&copy; 2026. All Rights Reserved. Sayangkuu.</p>
+        </footer>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
