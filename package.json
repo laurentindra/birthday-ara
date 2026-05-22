@@ -1,0 +1,12 @@
+{
+  "name": "birthday-ara",
+  "version": "1.0.0",
+  "description": "Happy 18th Birthday Website for Dara Azzahra (Ara)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
