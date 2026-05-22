@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: "🍦",
             title: "Kupon Jajan Sepuasnya",
             sub: "BERLAKU SELAMANYA",
-            desc: "Ara berhak minta traktir jajan apa aja yang Ara mau, kapan aja tanpa batas! Tinggal tunjukin kupon ini ke sayangkuu yaa! 🍔🧋🍰"
+            desc: "Ara berhak minta traktir jajan apa aja yang Ara mau, kapan aja tanpa batas! Tinggal tunjukin kupon ini ke sayangmu yaa! 🍔🧋🍰"
         },
         {
             icon: "🤗",
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: "💌",
             title: "Kupon Surat Cinta Dadakan",
             sub: "REQUEST KAPAN AJA",
-            desc: "Ara bisa minta sayangkuu nulis surat cinta dadakan yang panjang dan romantis kapan pun Ara mau. Wajib dari hati yang paling dalam! 📝💕"
+            desc: "Ara bisa minta sayangmu nulis surat cinta dadakan yang panjang dan romantis kapan pun Ara mau. Wajib dari hati yang paling dalam! 📝💕"
         },
         {
             icon: "🛍️",
@@ -471,7 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: "🌙",
             title: "Kupon Telepon Sampai Tidur",
             sub: "BERLAKU MALAM INI",
-            desc: "Ara bisa minta sayangkuu teleponan sampai ketiduran. Gak boleh ngeluh ngantuk duluan, harus nemenin Ara sampai pules! 🌙😴💖"
+            desc: "Ara bisa minta sayangmu teleponan sampai ketiduran. Gak boleh ngeluh ngantuk duluan, harus nemenin Ara sampai pules! 🌙😴💖"
         }
     ];
 
