@@ -14,6 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Suara Efek & BGM
     const bgm = document.getElementById('bgm-player');
 
+    function playBGM() {
+        if (bgm) {
+            bgm.currentTime = 0;
+            bgm.volume = 0.7;
+            bgm.play().catch(err => {
+                console.log('Autoplay blocked, akan coba lagi saat interaksi berikutnya:', err);
+            });
+        }
+    }
+
     // -----------------------------------------------------------------
     // 1. DYNAMIC CURSOR TRAIL (Kursor Hati Berkilau)
     // -----------------------------------------------------------------
